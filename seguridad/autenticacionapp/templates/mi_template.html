@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Vista</title>
+</head>
+<body>
+    <h1>Bienvenido a Mi Vista</h1>
+    {% if user.is_authenticated %}
+        <p>Hola, {{ user.username }}. Bienvenido de nuevo.</p>
+        <p><a href="{% url 'redirect_to_login' %}">Cerrar sesión</a></p>
+    {% else %}
+        <p>Por favor <a href="{% url 'login' %}">inicia sesión</a> para acceder a esta página.</p>
+    {% endif %}
+</body>
+</html>
