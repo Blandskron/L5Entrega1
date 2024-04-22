@@ -8,10 +8,6 @@
 </head>
 <body>
     <h1>Bienvenido a Otra Vista</h1>
-    {% if user.has_perm 'permisos_app.puede_ver_algo' %}
     <p>Hola, {{ user.username }}. Tienes permiso para ver esta página.</p>
-    {% else %}
-        <p>Lo siento, no tienes permiso para acceder a esta página.</p>
-    {% endif %}
 </body>
 </html>
