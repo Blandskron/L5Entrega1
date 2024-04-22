@@ -29,22 +29,3 @@ urlpatterns = [
     path('otra-vista/', views.OtraVista.as_view(), name='otra_vista'),
     path('acceso-denegado/', views.acceso_denegado, name='acceso_denegado'),
 ]
-
-
-# from django.contrib import admin
-# from django.urls import path, include
-# from django.contrib.auth.views import LoginView
-# from autenticacionapp import views
-
-# urlpatterns = [
-#     path('admin/', admin.site.urls),
-#     # Ruta para la página de inicio de sesión
-#     path('login/', LoginView.as_view(), name='login'),
-#     # Incluye las URLs de autenticación de Django
-#     path('', include('django.contrib.auth.urls')),
-#     # Otras URLs personalizadas aquí...
-#     path('mi-vista/', views.MiVista.as_view(), name='mi_vista'),
-#     path('otra-vista/', views.OtraVista.as_view(), name='otra_vista'),
-#     path('acceso-denegado/', views.acceso_denegado, name='acceso_denegado'),
-# ]
-
